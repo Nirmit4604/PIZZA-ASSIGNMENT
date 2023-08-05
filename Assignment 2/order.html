@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Pizza</title>
+    <link rel="stylesheet" href="./css/style.css">    <!-- Link to the CSS file for styling -->
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Make Your Own Pizza</h1>
+        <a class="home-btn" href="index.html">Home </a>
+        <a class="order-btn" href="order.html">Order</a>
+        
+    </header>
+
+    <main>
+        <form action="order_confirmation.html" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <fieldset>
+                <!-- Pizza Types -->
+              <legend>Choose Pizza Type:</legend>
+              <input type="radio" id="margherita" name="pizza-type" value="margherita">
+              <label for="margherita">Margherita</label>
+
+              <input type="radio" id="pepperoni-feast" name="pizza-type" value="pepperoni-feast">
+              <label for="pepperoni-feast">Pepperoni Feast</label>
+
+              <input type="radio" id="veggie-delight" name="pizza-type" value="veggie-delight">
+              <label for="veggie-delight">Veggie Delight</label>
+
+              <input type="radio" id="bbq-chicken" name="pizza-type" value="bbq-chicken">
+              <label for="bbq-chicken">BBQ Chicken</label>
+
+              <input type="radio" id="veggie-supreme" name="pizza-type" value="veggie-supreme">
+              <label for="veggie-supreme">Veggie Supreme</label>
+
+              <input type="radio" id="buffalo-chicken" name="pizza-type" value="buffalo-chicken">
+              <label for="buffalo-chicken">Buffalo Chicken</label>
+
+              <input type="radio" id="mediterranean" name="pizza-type" value="mediterranean">
+              <label for="mediterranean">Mediterranean</label>
+
+
+          </fieldset>
+
+            <fieldset>
+                <!-- Pizza Size -->
+                <legend>Choose Pizza Size:</legend>
+                <input type="radio" id="small" name="pizza-size" value="small">
+                <label for="small">Small</label>
+
+                <input type="radio" id="medium" name="pizza-size" value="medium">
+                <label for="medium">Medium</label>
+
+                <input type="radio" id="large" name="pizza-size" value="large">
+                <label for="large">Large</label>
+
+                <input type="radio" id="extra-large" name="pizza-size" value="extra large">
+                <label for="Extra large">Extra Large</label>
+            </fieldset>
+
+            <fieldset>
+                <!-- Pizza Toppings -->
+                <legend>Choose Toppings:</legend>
+                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+
+                <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+
+                <input type="checkbox" id="olives" name="toppings" value="olives">
+                <label for="olives">Olives</label>
+
+                <input type="checkbox" id="bell-peppers" name="toppings" value="bell-peppers">
+                <label for="bell-peppers">Bell Peppers</label>
+
+                <input type="checkbox" id="onions" name="toppings" value="onions">
+                <label for="onions">Onions</label>
+
+                <input type="checkbox" id="sausage" name="toppings" value="sausage">
+                <label for="sausage">Sausage</label>
+
+                <input type="checkbox" id="ham" name="toppings" value="ham">
+                <label for="ham">Ham</label>
+            </fieldset>
+
+            <fieldset>
+
+                <!-- Add On Cheese -->
+                <legend>Choose Cheese:</legend>
+                <input type="checkbox" id="mozzarella" name="cheese" value="mozzarella">
+                <label for="mozzarella">Mozzarella</label>
+
+                <input type="checkbox" id="cheddar" name="cheese" value="cheddar">
+                <label for="cheddar">Cheddar</label>
+
+                <input type="checkbox" id="parmesan" name="cheese" value="parmesan">
+                <label for="parmesan">Parmesan</label>
+
+                <input type="checkbox" id="feta" name="cheese" value="feta">
+                <label for="feta">Feta</label>
+
+                <input type="checkbox" id="blue-cheese" name="cheese" value="blue-cheese">
+                <label for="blue-cheese">Blue Cheese</label>
+
+                <input type="checkbox" id="goat-cheese" name="cheese" value="goat-cheese">
+                <label for="goat-cheese">Goat Cheese</label>
+
+                <input type="checkbox" id="swiss-cheese" name="cheese" value="swiss-cheese">
+                <label for="swiss-cheese">Swiss Cheese</label>
+
+                <input type="checkbox" id="gouda" name="cheese" value="gouda">
+                <label for="gouda">Gouda</label>
+            </fieldset>
+            
+            <fieldset>
+                <!-- Sauces -->
+                <legend>Choose Sauce:</legend>
+                <input type="checkbox" id="tomato" name="sauce" value="tomato">
+                <label for="tomato">Tomato Sauce</label>
+
+                <input type="checkbox" id="pesto" name="sauce" value="pesto">
+                <label for="pesto">Pesto Sauce</label>
+
+                <input type="checkbox" id="bbq" name="sauce" value="bbq">
+                <label for="bbq">BBQ Sauce</label>
+
+                <input type="checkbox" id="garlic" name="sauce" value="garlic">
+                <label for="garlic">Garlic Butter Sauce</label>
+
+                <input type="checkbox" id="alfredo" name="sauce" value="alfredo">
+                <label for="alfredo">Alfredo Sauce</label>
+
+                <input type="checkbox" id="ranch" name="sauce" value="ranch">
+                <label for="ranch">Ranch Sauce</label>
+            </fieldset>
+<div>
+  <section>
+    <fieldset>
+        <!-- Payment Method -->
+      <h2>Choose Payment Method:</h2>
+      
+      <input type="radio" id="Credit card" name="payment-method" value="Credit card">
+      <label for="Credit card">Credit card</label>
+
+      <input type="radio" id="Debit Card" name="payment-method" value="Debit Card">
+      <label for="Debit Card">Debit Card</label>
+
+      <input type="radio" id="Cash On Delivery" name="payment-method" value="Cash On Delivery">
+      <label for="Cash On Delivery">Cash On Delivery</label>
+  </fieldset>
+  </section>
+</div>
+<!-- Order Button -->
+<div class="orderBtn">
+    <button type="submit" class="orderBtn">Place Order</button>
+</div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Slice of Heaven. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

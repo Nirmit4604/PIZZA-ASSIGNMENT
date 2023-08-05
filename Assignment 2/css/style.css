@@ -1,0 +1,123 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set some basic styles for the whole page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Add background image using Grid and Flexbox */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../image/photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Style header, main, and footer sections */
+header, main, footer {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px; /* Add some margin to separate sections */
+}
+
+/* Customize the header section */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* Style the main content section */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  flex: 1; /* Allow the main content to grow and occupy the available space */
+}
+
+/* Customize the form styles */
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+/* Style the form labels to be bold */
+label {
+  font-weight: bold;
+}
+
+/* Style the text, email, tel input fields, and select dropdown */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 35%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the fieldset element, which groups related form elements */
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Customize the footer section */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+
+/* Change the text color of body, header, and h1 elements to green */
+body, header, h1 {
+  color: white;
+}
+
+/* Customize the home and order buttons to have green text and some padding */
+.home-btn {
+  text-decoration: none;
+  color: white;
+  padding-right: 350px;
+  font-size: large;
+}
+
+.order-btn {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+
+/* Customize the footer and h4 elements to have green text and some padding */
+.footer, h4 {
+  padding-top: 50px;
+}
+
+/* Set the text color to green and the background color to white for div and h2 elements */
+div, h2 {
+  color: black;
+  background-color: white;
+}
